@@ -12,4 +12,3 @@ if __name__ == '__main__':
     print(deviceModel.uuid)
     print(json.dumps(deviceModel.__dict__))
     print(deviceModel.to_json())
-

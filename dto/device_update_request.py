@@ -2,7 +2,7 @@ from model.device_model import DeviceModel
 import json
 
 
-class DeviceCreationRequest:
+class DeviceUpdateRequest:
 
     def __init__(self, uuid, name, device_type, manufacturer, software_version, latitude, longitude):
         self.uuid = uuid

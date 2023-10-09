@@ -14,5 +14,6 @@ APIs are exposed through a configurable port (7070) and accessible locally at: h
 
 The IoT Inventory resources currently modeled are:
 
+- Location (/location): A simple geographic location where it is possible to add on or more IoT device references
 - Device (/device): A generic representation of an IoT device with basic information and customizable attributes. 
 In the current implementation device's data are not handled and they are out of the scope of the demo inventory.
