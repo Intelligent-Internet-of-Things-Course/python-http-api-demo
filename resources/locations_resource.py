@@ -18,7 +18,7 @@ class LocationsResource(Resource):
             json_data = request.get_json(force=True)
             location_creation_request = LocationCreationRequest(**json_data)
             if location_creation_request.uuid in self.data_manager.location_dictionary:
-                return {'error': "Location UUID already exists"}, 409  # return data and 200 OK code
+                return {'error': "Location UUID already exists"}, 409  # return data and Conflict 409 code
             else:
                 new_location_model = LocationModel(location_creation_request.uuid,
                                                    location_creation_request.name,
